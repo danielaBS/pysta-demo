@@ -1,0 +1,82 @@
+[
+	{
+		"idZona": 1,
+		"nombreZona": "Risaralda"
+	},
+	{
+		"idZona": 2,
+		"nombreZona": "Sucre"
+	},
+	{
+		"idZona": 3,
+		"nombreZona": "Meta"
+	},
+	{
+		"idZona": 4,
+		"nombreZona": "Santander"
+	},
+	{
+		"idZona": 5,
+		"nombreZona": "Cundinamarca"
+	},
+	{
+		"idZona": 6,
+		"nombreZona": "Risaralda"
+	},
+	{
+		"idZona": 7,
+		"nombreZona": "Tolima"
+	},
+	{
+		"idZona": 8,
+		"nombreZona": "Sucre"
+	},
+	{
+		"idZona": 9,
+		"nombreZona": "Quindío"
+	},
+	{
+		"idZona": 10,
+		"nombreZona": "Casanare"
+	},
+	{
+		"idZona": 11,
+		"nombreZona": "Risaralda"
+	},
+	{
+		"idZona": 12,
+		"nombreZona": "Huila"
+	},
+	{
+		"idZona": 13,
+		"nombreZona": "Magdalena"
+	},
+	{
+		"idZona": 14,
+		"nombreZona": "Risaralda"
+	},
+	{
+		"idZona": 15,
+		"nombreZona": "Norte de Santander"
+	},
+	{
+		"idZona": 16,
+		"nombreZona": "Cesar"
+	},
+	{
+		"idZona": 17,
+		"nombreZona": "San Andrés y Providencia"
+	},
+	{
+		"idZona": 18,
+		"nombreZona": "Chocó"
+	},
+	{
+		"idZona": 19,
+		"nombreZona": "Sucre"
+	},
+	{
+		"idZona": 20,
+		"nombreZona": "Amazonas"
+	}
+]

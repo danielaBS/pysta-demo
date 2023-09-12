@@ -1,0 +1,130 @@
+<div class="row mapContainer d-flex justify-content-center">
+    <div class="filtros d-flex col-md-12 justify-content-around">
+        <div class="title d-flex flex-row justify-content-start">
+            <div class="titles d-flex align-items-center justify-content-between" >
+                <h2 *ngIf="mapType">Ubicación de los Vendedores</h2>
+                <h2 *ngIf="!mapType">Recorridos de los Vendedores</h2>
+            </div>
+            <div class="col-md-1" style="margin-right: 20px;">
+                <span class="material-icons button" (click)="mapType= true" matTooltip="Ubicaciones">
+                    location_on
+                </span>
+            </div>
+            <div class="col-md-1">
+                <span class="material-icons button" (click)="mapType = false" matTooltip="Recorridos">
+                    alt_route
+                </span>
+            </div>            
+        </div>
+        <div class="col-md-4">
+            <span class="material-icons filterButton" (click)="buscarVendedor()" matTooltip="Filtrar Información">
+                filter_alt
+            </span>
+
+        </div>
+        
+    </div>   
+    <agm-map *ngIf="mapType" [zoom]="zoom" [latitude]="3.454688" [longitude]="-76.5371312">
+        <div *ngFor="let data of vendedores">
+            <agm-marker  *ngIf="data.checked && data['localizacion']!==null" [latitude]="data['localizacion']['latitud']" [longitude]="data['localizacion']['longitud']" [label]="data['iniciales']" (markerClick)="clickedMarker(infowindow, data['idUsuario'], data['nombreVendedor'], data['apellidoVendedor'])">
+                <agm-info-window #infowindow>
+                    <strong>Información del Vendedor</strong>
+                    <p>ID: {{id}}</p>
+                    <p>Nombre: {{nombre}}</p>
+                    
+                </agm-info-window>
+            </agm-marker>
+        </div>    
+    </agm-map>  
+    <div class="warn" *ngIf="!(recorridos?.length>0) && !mapType">
+        <h2>No hay recorridos para mostrar. Por favor seleccione un vendedor y una fecha distintas.</h2>
+    </div>        
+    <agm-map *ngIf="!mapType" [zoom]="zoom" [latitude]="lat" [longitude]="lng" [usePanning]='true' (mapReady)='loadAPIWrapper($event)'>         
+        <div *ngFor="let data of recorridos; let i= index">
+            <agm-marker [latitude]="data['localizacion']['latitud']" [longitude]="data['localizacion']['longitud']" [label]="i.toString()" (markerClick)="clickedMarkerRec(infowindow1, data['createdAtRec'])">
+                <agm-info-window #infowindow1>
+                    <strong>Información adicional</strong>    
+                    <p>{{date | date:'short':'+0000'}}</p>                                    
+                </agm-info-window>
+            </agm-marker>            
+        </div>  
+    </agm-map> 
+</div>
+
+<div *ngIf="mapType" [@filtros]="show ? 'open' : 'closed'" style="background: white; border: 1px solid lightgray; border-radius: 5px; overflow-y: auto">          
+    <div style="padding: 5px;">  
+        <h3 style="text-align: center">Filtrar Vendedores</h3>
+        <div class="search d-flex justify-content-center">
+            <mat-form-field>
+                <mat-label>Buscar</mat-label>
+                <input matInput (keyup)="applyFilter($event)"  [(ngModel)]="searchText" placeholder="Ej.: Juan" #input>
+            </mat-form-field>
+        </div>      
+        <div style="padding: 5px; padding-left: 10px">
+            <div style="display: flex">
+                <div style="width: 90%">
+                    <h4> TODOS </h4>
+                </div>
+                <div style="width: 10%">
+                    <input type="checkbox" [checked]="isAllCheckBoxChecked()" (change)="checkAllCheckBox($event)"> 
+                </div>
+
+            </div>        
+            <div *ngFor="let vendedor of newData" style="display: flex">
+                <div style="width: 90%">
+                    <h5>{{ vendedor.nombreVendedor }}</h5>
+                </div>
+                <div style="width: 10%">
+                    <input type="checkbox" value="{{vendedor.idUsuario}}" [(ngModel)]="vendedor.checked">
+                </div>
+            </div>   
+        </div>       
+    </div>
+</div>                           
+
+<div *ngIf="!mapType" [@filtros]="show ? 'open' : 'closed'" style="background: white; border: 1px solid lightgray; border-radius: 5px; overflow-y: auto">    
+    <div style="padding: 5px;">  
+        <h3 style="text-align: center">Buscar por fecha</h3>
+        <form [formGroup]="rangoFechas" class="form">                        
+            <mat-form-field>
+                <mat-label>Fecha</mat-label>
+                <input matInput [matDatepicker]="dp" formControlName="fecha" value="{{fecha}}">
+                <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+                <mat-datepicker #dp></mat-datepicker>
+            </mat-form-field>  
+            <div class="ngx-timepicker-field-example">
+                <mat-label>Hora Inicial <sub>(24 horas)</sub>:</mat-label>
+                <ngx-timepicker-field  [format]="24" formControlName="horaIn"></ngx-timepicker-field>
+            </div>
+            <br>
+            <div class="ngx-timepicker-field-example">
+                <mat-label>Hora Final <sub>(24 horas)</sub>:</mat-label>
+                <ngx-timepicker-field  [format]="24" formControlName="horaFin"></ngx-timepicker-field>
+            </div>     
+        </form>                  
+        <br>
+        <div style="padding: 5px;">  
+            <h3 style="text-align: center">Seleccionar Vendedor</h3>
+            <div class="search d-flex justify-content-center">
+                <mat-form-field>
+                    <mat-label>Buscar</mat-label>
+                    <input matInput (keyup)="applyFilterRec($event)" [(ngModel)]="searchText2" placeholder="Ej.: Juan" #input>
+                </mat-form-field>
+            </div>      
+            <div style="padding: 5px; padding-left: 10px">                         
+                <div *ngFor="let vendor of newDataRec" style="display: flex">
+                    <div style="width: 90%">
+                        <h5>{{ vendor.nombreVendedor }}</h5>
+                    </div>
+                    <div style="width: 10%">
+                        <input type="checkbox" value="{{vendor.idUsuario}}" (change)="uncheck($event)" [(ngModel)]="vendor.checked">
+                    </div>
+                </div>   
+            </div>       
+        </div>    
+        <hr>
+        <div class="d-flex justify-content-center" style="width: 95%;">
+            <input class="btn" type="button" (click)="loadData(rangoFechas.value)" value="Buscar">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,209 @@
+<div class="card card-chart d-flex flex-row ">   
+    <div class="card-line">
+      <h1>Promedio de Pedidos y Visitas Semanal</h1>
+      <canvas id="chart" height="110px"></canvas>
+    </div>  
+    <div class="card-bar">
+      <h1>Top 5 de Agentes por Pedidos y Visitas</h1>
+      <canvas id="chart2" height="150px"></canvas>
+    </div>                
+</div>
+<div class="d-flex flex-row justify-content-center" style="margin-bottom: 2em;">
+  <div class="table-container-1 d-flex justify-content-start align-items-center flex-column">
+    <div class="header d-flex justify-content-between align-items-center">
+      <div>
+        <h1>Visitas por Vendedor</h1>
+      </div>
+      <div class="d-flex flex-row align-items-center table-header">
+          <div class="search">
+              <mat-form-field>
+                  <mat-label>Buscar</mat-label>
+                  <input matInput (keyup)="applyFilter1($event)" placeholder="Ej.: Juan" #input>
+              </mat-form-field>
+          </div>        
+          <div>
+              <li (click)="exporter1.exportTable('csv', {fileName:'reporte-visitas'})" matTooltip="Exportar a CSV">
+                  <span class="material-icons">
+                      file_download
+                  </span>         
+              </li>
+          </div>                
+      </div>
+    </div>
+    <table mat-table [dataSource]="obs1" matTableExporter class="mat-elevation-z8" id="tablaReporte1"  #exporter1="matTableExporter">
+        <ng-container matColumnDef="idUsuarioVendedor">
+            <th mat-header-cell *matHeaderCellDef> No. ID </th>
+            <td mat-cell *matCellDef="let element">{{element.idUsuarioVendedor}}</td>
+        </ng-container> 
+        
+        <!-- Name Column -->
+        <ng-container matColumnDef="nombreVendedor">
+            <th mat-header-cell *matHeaderCellDef> Nombre Vendedor </th>
+            <td mat-cell *matCellDef="let element; let i = index" >{{element.nombreVendedor}} {{element.apellidoVendedor}}</td>
+        </ng-container> 
+        <!-- Name Column -->
+        <ng-container matColumnDef="cantidadVisitas">
+            <th mat-header-cell *matHeaderCellDef>Total Visitas</th>
+            <td mat-cell *matCellDef="let element; let i = index">{{element.totalVisitas}}</td>
+        </ng-container>                                   
+        <!-- Name Column -->
+        <ng-container matColumnDef="promedioDuracion">
+            <th mat-header-cell *matHeaderCellDef> Promedio Duración </th>
+            <td mat-cell *matCellDef="let element; let i = index">{{element.promedio}} mins.</td>
+        </ng-container>                                   
+                                       
+        <!-- Weight Column -->
+        <tr mat-header-row *matHeaderRowDef="columnsVisitasVendedores"></tr>
+        <tr mat-row *matRowDef="let row; columns: columnsVisitasVendedores;"></tr>
+            
+    </table>
+    <mat-paginator #paginator1 [pageSizeOptions]="[9, 20, 40, 100]"></mat-paginator>
+    <a id="download-link" style="display: none"></a>                         
+  </div>
+  <div class="table-container-2 d-flex justify-content-start align-items-center flex-column">
+    <div class="header d-flex justify-content-between align-items-center">
+      <div>
+        <h1>Ventas por Cliente</h1>
+      </div>
+      <div class="d-flex flex-row align-items-center table-header">
+          <div class="search">
+              <mat-form-field>
+                  <mat-label>Buscar</mat-label>
+                  <input matInput (keyup)="applyFilter2($event)" placeholder="Ej.: Juan" #input>
+              </mat-form-field>
+          </div>        
+          <div>
+              <li (click)="exporter.exportTable('csv', {fileName:'reporte-visitas'})" matTooltip="Exportar a CSV">
+                  <span class="material-icons">
+                      file_download
+                  </span>         
+              </li>
+          </div>                
+      </div>
+    </div>
+    <table mat-table [dataSource]="obs2" matTableExporter class="mat-elevation-z8" id="tablaReporte2"  #exporter="matTableExporter">
+        <ng-container matColumnDef="idCliente">
+            <th mat-header-cell *matHeaderCellDef> No. ID </th>
+            <td mat-cell *matCellDef="let element">{{element.idCliente}}</td>
+        </ng-container> 
+        
+        <!-- Name Column -->
+        <ng-container matColumnDef="sucursal">
+            <th mat-header-cell *matHeaderCellDef> Sucursal </th>
+            <td mat-cell *matCellDef="let element; let i = index" >{{element.sucursal}}</td>
+        </ng-container> 
+        <!-- Name Column -->
+        <ng-container matColumnDef="cantidadPedidos">
+            <th mat-header-cell *matHeaderCellDef>Total Pedidos</th>
+            <td mat-cell *matCellDef="let element; let i = index">{{element.totalPedidos}}</td>
+        </ng-container>                                   
+        <!-- Name Column -->
+        <ng-container matColumnDef="promedioTotal">
+            <th mat-header-cell *matHeaderCellDef> Promedio Valor </th>
+            <td mat-cell *matCellDef="let element; let i = index">{{element.promedio}} COP</td>
+        </ng-container>                                   
+                                       
+        <!-- Weight Column -->
+        <tr mat-header-row *matHeaderRowDef="columnsVentasClientes"></tr>
+        <tr mat-row *matRowDef="let row; columns: columnsVentasClientes;"></tr>
+            
+    </table>
+    <mat-paginator #paginator2 [pageSizeOptions]="[9, 20, 40, 100]"></mat-paginator>
+    <a id="download-link" style="display: none"></a>                         
+  </div>
+
+</div>
+<div class="d-flex flex-row justify-content-center" style="margin: 2em 1em;">
+
+<div class="table-container-2 col-md-12 d-flex justify-content-start align-items-center flex-column">
+    <div class="header d-flex justify-content-between align-items-center">
+      <div>
+        <h1>Reporte Jornadas</h1>
+      </div>
+      <div class="d-flex flex-row align-items-center table-header">
+          <div class="search">
+              <mat-form-field>
+                  <mat-label>Buscar</mat-label>
+                  <input matInput (keyup)="applyFilter3($event)" placeholder="Ej.: Juan" #input>
+              </mat-form-field>
+          </div>        
+          <div>
+              <li (click)="exporter.exportTable('csv', {fileName:'reporte-jornadas'})" matTooltip="Exportar a CSV">
+                  <span class="material-icons">
+                      file_download
+                  </span>         
+              </li>
+          </div>                
+      </div>
+    </div>
+    <div class="filters d-flex justify-content-between align-items-center">       
+        <div class="d-flex flex-row col-md-12 justify-content-start table-header">
+            <div class="filterDate col-md-7">
+                <form [formGroup]="rangoFechas">
+                    <h3>Consultar por fechas</h3>
+                    <div class="d-flex flex-row">
+                        <mat-form-field >
+                            <mat-label>Fecha Inicial</mat-label>
+                            <input matInput [matDatepicker]="dp" formControlName="horaIn" value="{{horaIn}}">
+                            <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+                            <mat-datepicker #dp></mat-datepicker>
+                         </mat-form-field>
+                         <mat-form-field >
+                            <mat-label>Fecha Final</mat-label>
+                            <input matInput [matDatepicker]="dpf" formControlName="horaFin" value="{{horaFin}}">
+                            <mat-datepicker-toggle matSuffix [for]="dpf"></mat-datepicker-toggle>
+                            <mat-datepicker #dpf></mat-datepicker>
+                         </mat-form-field>    
+                         <input class="btn" type="button" (click)="loadData(rangoFechas.value)" value="Buscar">
+                    </div>                                                         
+               </form>                                                        
+            </div>                    
+            <div class="filterUser col-md-5">
+                <form [formGroup]="idVendedor">
+                    <h3>Consultar por vendedor</h3>
+                    <div class="d-flex flex-row">
+                        <mat-form-field>
+                            <mat-label>Escoja una opción</mat-label>
+                            <mat-select formControlName="id">
+                              <mat-option *ngFor="let vendedor of vendedoresForSelect" value="{{vendedor.idUsuario}}">{{vendedor.nombreVendedor}} {{vendedor.apellidoVendedor}}</mat-option>                              
+                            </mat-select>
+                        </mat-form-field>                                                
+                         <input class="btn" type="button" (click)="loadDataByUser(idVendedor.value)" value="Buscar">
+                    </div>                                                         
+               </form>      
+            </div>                
+        </div>
+    </div>
+    <table mat-table [dataSource]="obs3" matTableExporter class="mat-elevation-z8" id="tablaReporte3"  #exporter="matTableExporter">
+        <ng-container matColumnDef="idJornada">
+            <th mat-header-cell *matHeaderCellDef> No. ID </th>
+            <td mat-cell *matCellDef="let element">{{element.idjornada}}</td>
+        </ng-container> 
+        
+        <!-- Name Column -->
+        <ng-container matColumnDef="vendedor">
+            <th mat-header-cell *matHeaderCellDef> Vendedor </th>
+            <td mat-cell *matCellDef="let element; let i = index" >{{element.nombreVendedor}} {{element.apellidoVendedor}}</td>
+        </ng-container> 
+        <!-- Name Column -->
+        <ng-container matColumnDef="horaInicio">
+            <th mat-header-cell *matHeaderCellDef>Fecha - Hora Inicio</th>
+            <td mat-cell *matCellDef="let element; let i = index">{{element.createdAt | date:"MMM/dd HH:mm":"+0000" }}</td>
+        </ng-container>                                   
+        <!-- Name Column -->
+        <ng-container matColumnDef="horaFin">
+            <th mat-header-cell *matHeaderCellDef> Fecha - Hora Fin </th>
+            <td mat-cell *matCellDef="let element; let i = index">{{element.finJornada | date:"MMM/dd HH:mm":"+0000" }} </td>
+        </ng-container>                                   
+                                       
+        <!-- Weight Column -->
+        <tr mat-header-row *matHeaderRowDef="columnsJornadas"></tr>
+        <tr mat-row *matRowDef="let row; columns: columnsJornadas;"></tr>
+            
+    </table>
+    <mat-paginator #paginator3 [pageSizeOptions]="[9, 20, 40, 100]"></mat-paginator>
+    <a id="download-link" style="display: none"></a>                         
+  </div>
+  </div>
+
+

@@ -1,0 +1,702 @@
+[
+	{
+		"idPedido": 1,
+		"createdAt": "2023-02-06 18:13:24",
+		"modifiedAt": "2023-07-18 12:57:43",
+		"idClientePedido": 7,
+		"idVendedorPedido": 13,
+		"totalPedido": "$777,379",
+		"totalPedido": "(528) 335-4135",
+		"modoPago": "Credito",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 2,
+		"createdAt": "2023-01-06 07:51:33",
+		"modifiedAt": "2023-01-04 16:40:46",
+		"idClientePedido": 5,
+		"idVendedorPedido": 11,
+		"totalPedido": "$548,506",
+		"totalPedido": "(460) 892-7863",
+		"modoPago": "Credito",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 3,
+		"createdAt": "2023-05-09 03:52:40",
+		"modifiedAt": "2023-03-15 10:49:28",
+		"idClientePedido": 11,
+		"idVendedorPedido": 10,
+		"totalPedido": "$737,071",
+		"totalPedido": "(831) 341-2817",
+		"modoPago": "Efectivo",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 4,
+		"createdAt": "2023-04-02 13:10:21",
+		"modifiedAt": "2023-06-26 01:24:42",
+		"idClientePedido": 8,
+		"idVendedorPedido": 15,
+		"totalPedido": "$426,496",
+		"totalPedido": "(918) 581-8871",
+		"modoPago": "Efectivo",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 5,
+		"createdAt": "2022-09-07 23:14:39",
+		"modifiedAt": "2023-01-16 01:27:13",
+		"idClientePedido": 6,
+		"idVendedorPedido": 2,
+		"totalPedido": "$249,976",
+		"totalPedido": "(804) 835-4925",
+		"modoPago": "Credito",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 6,
+		"createdAt": "2022-11-25 03:36:59",
+		"modifiedAt": "2023-05-04 07:56:45",
+		"idClientePedido": 8,
+		"idVendedorPedido": 10,
+		"totalPedido": "$584,343",
+		"totalPedido": "(325) 236-5683",
+		"modoPago": "Credito",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 7,
+		"createdAt": "2023-02-19 15:16:20",
+		"modifiedAt": "2023-05-19 06:59:02",
+		"idClientePedido": 13,
+		"idVendedorPedido": 6,
+		"totalPedido": "$498,384",
+		"totalPedido": "(198) 356-3283",
+		"modoPago": "Efectivo",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 8,
+		"createdAt": "2022-10-25 19:23:11",
+		"modifiedAt": "2022-11-26 11:06:23",
+		"idClientePedido": 14,
+		"idVendedorPedido": 7,
+		"totalPedido": "$595,446",
+		"totalPedido": "(182) 513-1019",
+		"modoPago": "Efectivo",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 9,
+		"createdAt": "2022-11-26 15:47:18",
+		"modifiedAt": "2023-07-24 20:27:52",
+		"idClientePedido": 5,
+		"idVendedorPedido": 4,
+		"totalPedido": "$611,515",
+		"totalPedido": "(691) 332-1748",
+		"modoPago": "Credito",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 10,
+		"createdAt": "2023-08-28 14:13:53",
+		"modifiedAt": "2023-08-26 13:56:23",
+		"idClientePedido": 6,
+		"idVendedorPedido": 7,
+		"totalPedido": "$743,866",
+		"totalPedido": "(804) 844-8183",
+		"modoPago": "Credito",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 11,
+		"createdAt": "2023-06-25 06:46:42",
+		"modifiedAt": "2023-03-26 21:02:20",
+		"idClientePedido": 14,
+		"idVendedorPedido": 6,
+		"totalPedido": "$677,061",
+		"totalPedido": "(414) 764-3281",
+		"modoPago": "Efectivo",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 12,
+		"createdAt": "2023-04-08 01:53:55",
+		"modifiedAt": "2023-07-23 16:21:41",
+		"idClientePedido": 14,
+		"idVendedorPedido": 9,
+		"totalPedido": "$616,842",
+		"totalPedido": "(434) 562-5714",
+		"modoPago": "Efectivo",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 13,
+		"createdAt": "2023-08-26 01:53:29",
+		"modifiedAt": "2023-05-28 12:44:53",
+		"idClientePedido": 15,
+		"idVendedorPedido": 3,
+		"totalPedido": "$226,107",
+		"totalPedido": "(502) 707-2636",
+		"modoPago": "Credito",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 14,
+		"createdAt": "2023-09-23 09:07:22",
+		"modifiedAt": "2023-01-19 03:22:16",
+		"idClientePedido": 6,
+		"idVendedorPedido": 8,
+		"totalPedido": "$928,947",
+		"totalPedido": "(542) 620-8246",
+		"modoPago": "Credito",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 15,
+		"createdAt": "2023-02-10 18:34:28",
+		"modifiedAt": "2023-02-04 23:34:03",
+		"idClientePedido": 14,
+		"idVendedorPedido": 9,
+		"totalPedido": "$953,875",
+		"totalPedido": "(478) 881-3866",
+		"modoPago": "Efectivo",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 16,
+		"createdAt": "2023-09-02 15:59:26",
+		"modifiedAt": "2022-11-04 11:29:01",
+		"idClientePedido": 11,
+		"idVendedorPedido": 7,
+		"totalPedido": "$243,933",
+		"totalPedido": "(694) 494-7503",
+		"modoPago": "Efectivo",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 17,
+		"createdAt": "2023-08-23 06:36:20",
+		"modifiedAt": "2023-06-01 05:07:27",
+		"idClientePedido": 4,
+		"idVendedorPedido": 3,
+		"totalPedido": "$302,564",
+		"totalPedido": "(552) 238-9083",
+		"modoPago": "Credito",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 18,
+		"createdAt": "2023-05-10 00:40:55",
+		"modifiedAt": "2023-08-11 08:17:10",
+		"idClientePedido": 5,
+		"idVendedorPedido": 1,
+		"totalPedido": "$263,253",
+		"totalPedido": "(810) 664-8831",
+		"modoPago": "Credito",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 19,
+		"createdAt": "2023-05-28 22:21:10",
+		"modifiedAt": "2022-12-09 21:29:01",
+		"idClientePedido": 8,
+		"idVendedorPedido": 1,
+		"totalPedido": "$171,488",
+		"totalPedido": "(591) 243-0351",
+		"modoPago": "Efectivo",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 20,
+		"createdAt": "2023-03-31 20:04:10",
+		"modifiedAt": "2022-10-20 09:05:29",
+		"idClientePedido": 5,
+		"idVendedorPedido": 14,
+		"totalPedido": "$658,883",
+		"totalPedido": "(620) 230-1611",
+		"modoPago": "Efectivo",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 21,
+		"createdAt": "2023-07-06 09:38:25",
+		"modifiedAt": "2023-10-03 07:18:57",
+		"idClientePedido": 11,
+		"idVendedorPedido": 3,
+		"totalPedido": "$341,775",
+		"totalPedido": "(637) 373-4025",
+		"modoPago": "Credito",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 22,
+		"createdAt": "2023-09-25 17:01:56",
+		"modifiedAt": "2022-11-05 23:12:53",
+		"idClientePedido": 4,
+		"idVendedorPedido": 12,
+		"totalPedido": "$823,143",
+		"totalPedido": "(537) 159-6151",
+		"modoPago": "Credito",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 23,
+		"createdAt": "2022-09-25 17:02:42",
+		"modifiedAt": "2023-06-06 08:54:42",
+		"idClientePedido": 5,
+		"idVendedorPedido": 5,
+		"totalPedido": "$981,423",
+		"totalPedido": "(997) 678-3120",
+		"modoPago": "Efectivo",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 24,
+		"createdAt": "2022-11-23 13:17:33",
+		"modifiedAt": "2022-11-29 02:37:15",
+		"idClientePedido": 1,
+		"idVendedorPedido": 1,
+		"totalPedido": "$803,756",
+		"totalPedido": "(789) 284-8452",
+		"modoPago": "Efectivo",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 25,
+		"createdAt": "2022-10-25 14:15:59",
+		"modifiedAt": "2023-01-02 10:21:58",
+		"idClientePedido": 9,
+		"idVendedorPedido": 11,
+		"totalPedido": "$291,858",
+		"totalPedido": "(284) 616-1915",
+		"modoPago": "Credito",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 26,
+		"createdAt": "2023-07-09 18:31:16",
+		"modifiedAt": "2023-09-28 05:37:17",
+		"idClientePedido": 10,
+		"idVendedorPedido": 3,
+		"totalPedido": "$845,876",
+		"totalPedido": "(391) 217-2412",
+		"modoPago": "Credito",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 27,
+		"createdAt": "2023-06-21 12:24:14",
+		"modifiedAt": "2023-06-24 15:40:43",
+		"idClientePedido": 11,
+		"idVendedorPedido": 12,
+		"totalPedido": "$424,070",
+		"totalPedido": "(649) 908-2495",
+		"modoPago": "Efectivo",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 28,
+		"createdAt": "2023-02-14 06:01:39",
+		"modifiedAt": "2023-02-24 15:10:12",
+		"idClientePedido": 11,
+		"idVendedorPedido": 6,
+		"totalPedido": "$179,729",
+		"totalPedido": "(361) 497-2510",
+		"modoPago": "Efectivo",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 29,
+		"createdAt": "2022-12-24 21:58:49",
+		"modifiedAt": "2023-03-04 18:58:29",
+		"idClientePedido": 2,
+		"idVendedorPedido": 8,
+		"totalPedido": "$709,587",
+		"totalPedido": "(561) 558-1016",
+		"modoPago": "Credito",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 30,
+		"createdAt": "2022-10-01 02:28:34",
+		"modifiedAt": "2022-11-08 23:39:48",
+		"idClientePedido": 3,
+		"idVendedorPedido": 9,
+		"totalPedido": "$759,400",
+		"totalPedido": "(693) 348-8337",
+		"modoPago": "Credito",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 31,
+		"createdAt": "2022-12-11 14:15:31",
+		"modifiedAt": "2023-05-05 18:58:20",
+		"idClientePedido": 15,
+		"idVendedorPedido": 7,
+		"totalPedido": "$220,610",
+		"totalPedido": "(575) 279-8382",
+		"modoPago": "Efectivo",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 32,
+		"createdAt": "2022-12-27 12:45:04",
+		"modifiedAt": "2023-05-25 17:03:40",
+		"idClientePedido": 3,
+		"idVendedorPedido": 13,
+		"totalPedido": "$994,776",
+		"totalPedido": "(235) 231-3865",
+		"modoPago": "Efectivo",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 33,
+		"createdAt": "2023-01-17 19:45:30",
+		"modifiedAt": "2022-11-30 19:11:24",
+		"idClientePedido": 2,
+		"idVendedorPedido": 7,
+		"totalPedido": "$962,224",
+		"totalPedido": "(562) 465-5843",
+		"modoPago": "Credito",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 34,
+		"createdAt": "2022-09-06 04:53:22",
+		"modifiedAt": "2023-05-21 12:30:28",
+		"idClientePedido": 15,
+		"idVendedorPedido": 2,
+		"totalPedido": "$866,911",
+		"totalPedido": "(386) 332-3152",
+		"modoPago": "Credito",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 35,
+		"createdAt": "2023-09-14 01:56:14",
+		"modifiedAt": "2022-09-21 21:59:23",
+		"idClientePedido": 12,
+		"idVendedorPedido": 8,
+		"totalPedido": "$885,479",
+		"totalPedido": "(686) 243-3372",
+		"modoPago": "Efectivo",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 36,
+		"createdAt": "2022-09-07 07:18:26",
+		"modifiedAt": "2023-05-07 22:47:28",
+		"idClientePedido": 4,
+		"idVendedorPedido": 14,
+		"totalPedido": "$972,401",
+		"totalPedido": "(562) 323-3432",
+		"modoPago": "Efectivo",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 37,
+		"createdAt": "2022-12-18 10:42:50",
+		"modifiedAt": "2022-10-13 11:04:47",
+		"idClientePedido": 13,
+		"idVendedorPedido": 12,
+		"totalPedido": "$323,461",
+		"totalPedido": "(742) 632-6816",
+		"modoPago": "Credito",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 38,
+		"createdAt": "2022-12-05 21:06:09",
+		"modifiedAt": "2022-11-15 09:20:26",
+		"idClientePedido": 3,
+		"idVendedorPedido": 8,
+		"totalPedido": "$310,643",
+		"totalPedido": "(185) 187-1283",
+		"modoPago": "Credito",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 39,
+		"createdAt": "2023-07-20 02:38:23",
+		"modifiedAt": "2023-01-24 22:35:55",
+		"idClientePedido": 6,
+		"idVendedorPedido": 13,
+		"totalPedido": "$575,431",
+		"totalPedido": "(852) 786-0637",
+		"modoPago": "Efectivo",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 40,
+		"createdAt": "2023-04-15 07:14:41",
+		"modifiedAt": "2023-07-05 11:30:34",
+		"idClientePedido": 10,
+		"idVendedorPedido": 9,
+		"totalPedido": "$303,594",
+		"totalPedido": "(117) 388-3130",
+		"modoPago": "Efectivo",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 41,
+		"createdAt": "2022-12-10 22:58:58",
+		"modifiedAt": "2023-03-18 12:05:08",
+		"idClientePedido": 4,
+		"idVendedorPedido": 1,
+		"totalPedido": "$332,955",
+		"totalPedido": "(705) 276-3821",
+		"modoPago": "Credito",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 42,
+		"createdAt": "2023-02-10 07:13:52",
+		"modifiedAt": "2023-04-18 05:40:56",
+		"idClientePedido": 1,
+		"idVendedorPedido": 11,
+		"totalPedido": "$915,460",
+		"totalPedido": "(245) 323-5577",
+		"modoPago": "Credito",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 43,
+		"createdAt": "2023-08-02 19:22:29",
+		"modifiedAt": "2023-07-10 10:05:08",
+		"idClientePedido": 7,
+		"idVendedorPedido": 3,
+		"totalPedido": "$88,517",
+		"totalPedido": "(181) 272-3123",
+		"modoPago": "Efectivo",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 44,
+		"createdAt": "2023-07-25 16:33:58",
+		"modifiedAt": "2023-06-11 17:17:25",
+		"idClientePedido": 12,
+		"idVendedorPedido": 10,
+		"totalPedido": "$720,111",
+		"totalPedido": "(374) 761-3266",
+		"modoPago": "Efectivo",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 45,
+		"createdAt": "2023-06-24 08:56:33",
+		"modifiedAt": "2023-03-03 15:30:13",
+		"idClientePedido": 6,
+		"idVendedorPedido": 14,
+		"totalPedido": "$984,790",
+		"totalPedido": "(448) 770-3655",
+		"modoPago": "Credito",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 46,
+		"createdAt": "2023-07-27 02:27:25",
+		"modifiedAt": "2023-06-03 06:46:36",
+		"idClientePedido": 1,
+		"idVendedorPedido": 15,
+		"totalPedido": "$836,375",
+		"totalPedido": "(758) 675-7396",
+		"modoPago": "Credito",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 47,
+		"createdAt": "2023-05-12 08:56:31",
+		"modifiedAt": "2023-05-15 06:24:29",
+		"idClientePedido": 4,
+		"idVendedorPedido": 5,
+		"totalPedido": "$358,655",
+		"totalPedido": "(649) 792-0716",
+		"modoPago": "Efectivo",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 48,
+		"createdAt": "2023-06-18 07:24:52",
+		"modifiedAt": "2023-04-29 15:24:18",
+		"idClientePedido": 4,
+		"idVendedorPedido": 2,
+		"totalPedido": "$509,976",
+		"totalPedido": "(687) 231-8379",
+		"modoPago": "Efectivo",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 49,
+		"createdAt": "2023-04-29 01:49:24",
+		"modifiedAt": "2023-01-28 21:13:04",
+		"idClientePedido": 10,
+		"idVendedorPedido": 5,
+		"totalPedido": "$855,839",
+		"totalPedido": "(583) 315-5435",
+		"modoPago": "Credito",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	},
+	{
+		"idPedido": 50,
+		"createdAt": "2022-10-24 02:58:55",
+		"modifiedAt": "2023-09-09 20:43:50",
+		"idClientePedido": 13,
+		"idVendedorPedido": 4,
+		"totalPedido": "$766,769",
+		"totalPedido": "(334) 189-8464",
+		"modoPago": "Credito",
+		"descripcion": [
+			{"idProducto": 3, "descripcion": "DESENGRASANTE BIO", "cantidad": 3, "valor unidad": "1600"},
+			{"idProducto":5, "descripcion": "limpia vidrios botella 100ml","cantidad": 2, "valor unidad": "3100"}			  
+		]
+	}
+]

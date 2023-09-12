@@ -1,0 +1,157 @@
+
+.form-container {
+  width: 450px;
+  height: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0 0.6em 2em;
+
+}
+.form-header {
+  width: 100%;
+  height: 60px;
+  color: white;
+  padding-left: 1em;
+  align-items: center;
+  display: flex;
+  background-color: #3B86FF;
+}
+input[type=text] {
+  border-radius: 8px;
+  padding: 8px 16px;
+  border: 2px solid #E8E8E8;
+}
+form p {
+  margin-bottom: 0.2em;
+}
+mat-form-field {
+  margin: 0 10px;
+}
+
+.table-container {
+  background-color: #fff;
+  width: 95%;
+  align-self: center !important;
+  margin: 1.3em 0 0;
+}
+table {
+  width: 95%;
+  margin: 1em 0 2em 1em;
+}     
+
+.btns {
+  width: 100%;
+  padding: 12px 0;
+  background-color: #43425D;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+}
+
+.btnsTable {
+  background-color: #A4A4A4;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+
+}
+th.mat-sort-header-sorted {
+  color: black;
+}
+
+form div {
+  margin-top: 1em;
+}
+.circle {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inputs-container {
+  width: 100%;
+  margin: 1em 0 4em 0 ;
+
+}
+.circleEd {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.initials {
+  color: #FCFCFC;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: 0.2625px;
+}
+.initialsEd {
+  margin: 0 !important;
+  color: #FCFCFC;
+  font-size: 24px;
+  line-height: 19px;
+  letter-spacing: 0.2625px;
+}
+ li {  
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+  color: #A4AFB7;
+  align-items: center;
+}
+
+.search {
+  width: 95%;
+  margin-right: 10px;
+}
+
+.header {
+  width: 100%;
+  padding: 20px 4% 0;
+  border-bottom: 3px solid #F1F1F3;
+}
+
+.paginator {
+  width: 100%;
+  padding-right: 1em;
+}
+
+.row {
+  width: 100%;
+  margin: 0 !important;
+}
+mat-select {
+  width: 55%;
+  padding: 0.4em 0.4em 0 1em ;
+  align-items: center;
+  border-radius: 5px;  
+  border: 1px solid lightgray;
+  height: 2.5em;
+}
+
+.btn-new  button {
+  border-radius: 8px;
+  padding: 6px 12px;
+  width: 150px;
+  background-color: transparent;
+  border-color: #D8D8D8;
+  display:flex;
+  align-items:center;
+  justify-content: space-evenly;
+}
+
+form {
+  width: 95%;
+}
+
+.btnLetters {
+  text-decoration: none;
+  cursor: pointer ;
+  margin: 0 5px !important;
+}

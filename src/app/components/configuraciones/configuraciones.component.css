@@ -1,0 +1,97 @@
+mat-grid-list {
+    width: 100%;
+}
+.schedule-form {
+    width: 48%;
+    height: 38em;    
+    margin: 1em 1em  0 0;
+    background-color: white;
+
+}
+.schedule-form, .visitType-form {
+    padding: 1em;
+}
+.visitType-form {
+    margin-top: 1em;
+    background-color: white;
+    width: 48%;
+}
+
+.tile-agentes {
+    cursor: pointer;
+    background-color: white;
+}
+  
+mat-paginator {
+    position: fixed;
+    bottom: 15px;
+    width: 38%;
+    left: 24em;
+}
+  
+.header {
+    margin: 1em;
+    background-color: white;
+    padding: 1.5em;
+    width: 100%;
+    height: 100%;  
+}
+.circle {
+    margin-left: 5px;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.initials {
+    color: #FCFCFC;
+    font-size: 18px;
+    line-height: 16px;
+    letter-spacing: 0.2625px;
+}
+  
+p {
+    margin: 0 !important;
+}
+  
+.info {
+    margin-left: 20px;
+}
+  
+.search {
+    width: 95%;
+    margin-right: 10px;
+}
+  
+.row {
+    width: 100%;
+    margin: 0 !important;
+}
+.btn {
+    background-color: #43425D;
+    color: white;
+    border-radius: 5px;
+    padding: 2px 10px;
+    margin: 8px 0;
+}
+
+.item {
+    width: 100%;
+    margin-top: 0.5em !important;
+    border-radius: 8px;
+    padding: 8px 16px;
+    background-color: #F3F3F3;
+  }
+  .button-list {
+    background-color: #F3F3F3;
+    border: none;
+    width: 30px;
+    margin-right: 10px;
+  }
+  input[type=text] {
+    border-radius: 8px;
+    padding: 8px 16px;
+    border: 2px solid #E8E8E8;
+  }

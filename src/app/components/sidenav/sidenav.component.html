@@ -1,0 +1,101 @@
+<mat-sidenav-container class="sidenav-container" autosize>
+    <mat-sidenav #drawer class="sidenav" fixedInViewport
+        [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+        [mode]="(isHandset$ | async) ? 'over' : 'side'"
+        [opened]="(isHandset$ | async) === false">
+      <mat-toolbar class="brand d-flex justify-content-center">
+        <h3 *ngIf="showFiller">CONTROL DE VISITAS</h3>
+        <h3 *ngIf="!showFiller">DY</h3>
+
+      </mat-toolbar>
+  
+      <mat-nav-list>
+        <mat-list class="navigation">
+          <mat-list-item *ngIf="accessRole" routerLinkActive="active" >
+            <a class="d-flex align-items-center" routerLink="/visitas">
+              <span class="material-icons" >
+                home_work
+                </span>
+              <span *ngIf="showFiller" class="routerText">Visitas</span>
+            </a>
+          </mat-list-item> 
+          <mat-list-item routerLinkActive="active">
+            <a class="d-flex align-items-center" routerLink="/pedidos">
+              <span class="material-icons">
+                shopping_cart
+                </span>
+              <span *ngIf="showFiller" class="routerText">Pedidos</span>
+            </a>
+          </mat-list-item> 
+          <mat-list-item *ngIf="accessRole" routerLinkActive="active">
+            <a class="d-flex align-items-center" routerLink="/clientes">
+              <span class="material-icons">
+                perm_identity
+                </span>
+              <span *ngIf="showFiller" class="routerText">Clientes</span>
+            </a>
+          </mat-list-item>                             
+          <mat-list-item *ngIf="accessRole" routerLinkActive="active">
+            <a class="d-flex align-items-center" routerLink="/vendedores">
+              <span class="material-icons">
+                work_outline
+                </span>              
+                <span *ngIf="showFiller" class="routerText">Vendedores</span>
+            </a>
+          </mat-list-item>          
+          <mat-list-item *ngIf="accessRole" routerLinkActive="active" >
+            <a class="d-flex align-items-center" routerLink="/mapa-vendedores">
+              <span class="material-icons">
+                person_pin_circle
+                </span>
+              <span *ngIf="showFiller" class="routerText">Mapa Vendedores</span>
+            </a>
+          </mat-list-item>
+                               
+          <mat-list-item *ngIf="accessRole" routerLinkActive="active" >
+            <a class="d-flex align-items-center" routerLink="/reportes">
+              <span class="material-icons" >
+                table_chart
+                </span>
+              <span *ngIf="showFiller" class="routerText">Reportes</span>
+            </a>
+          </mat-list-item>     
+          <mat-list-item *ngIf="accessRole" routerLinkActive="active" >
+            <a class="d-flex align-items-center" routerLink="/configuracion">
+              <span class="material-icons">
+                settings
+                </span>
+              <span *ngIf="showFiller" class="routerText">Configuración</span>
+            </a>
+          </mat-list-item>               
+        </mat-list>
+      </mat-nav-list>
+      <div class="sidenav-footer">
+        <li (click)="logout()" class="d-flex align-items-center"><span class="material-icons">
+          logout
+          </span> 
+          <span style="margin-left: 18px;" *ngIf="showFiller">Cerrar sesión</span></li>
+      </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <mat-toolbar style="background-color: white !important;">
+        <a type="button" aria-label="Toggle sidenav" mat-icon-button (click)="showFiller = !showFiller"
+           style="margin: 0 10px;">
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </a>
+        <span style="margin:0 15px">{{(activeMenuItem$ | async)?.title}}</span>
+        <div class="ml-auto p-2 bd-highlight d-flex align-items-center align-content-center flex-row">
+          <div class="divide"></div>
+          <p style="margin:0;">Mock User</p>
+        </div>
+        
+        <div class="circle  p-2 bd-highlight" [ngStyle]="{'background-color': circleColor}">
+          <div class="initials">MU</div>
+        </div>
+      </mat-toolbar>
+      <router-outlet></router-outlet>
+  
+      <!-- Add Content Here -->
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  

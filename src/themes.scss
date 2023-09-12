@@ -1,0 +1,85 @@
+
+@include mat-core();
+
+$my-primary: (
+    50 : #454466,
+    100 : #7574A1,
+    200 : #A4A2DB,
+    300 : #A4A2DB,
+    400 : #807FB3,
+
+    500 : #43425D,
+
+    600 : #008200,
+    700 : #007700,
+    800 : #006d00,
+    900 : #005a00,
+    A100 : #8bff8b,
+    A200 : #58ff58,
+    A400 : #fff,
+    A700 : #fff,
+    contrast: (
+        50 : #fff,
+        100 : #fff,
+        200 : #fff,
+        300 : #fff,
+        400 : #fff,
+        500 : #fff,
+        600 : #1D1D1D,
+        700 : #1D1D1D,
+        800 : #1D1D1D,
+        900 : #1D1D1D,
+        A100 : #1D1D1D,
+        A200 : #1D1D1D,
+        A400 : #1D1D1D,
+        A700 : #1D1D1D,
+    )
+);
+
+$my-accent: (
+    50 : #008200,
+    100 : #008200,
+    200 : #80c580,
+    300 : #4dad4d,
+    400 : #F3F3F3,
+
+    500 : #008200,
+
+    600 : #008200,
+    700 : #007700,
+    800 : #006d00,
+    900 : #005a00,
+    A100 : #8bff8b,
+    A200 : #58ff58,
+    A400 : #25ff25,
+    A700 : #0cff0c,
+    contrast: (
+        50 : #fff,
+        100 : #fff,
+        200 : #fff,
+        300 : #fff,
+        400 : #fff,
+        500 : #fff,
+        600 : #1D1D1D,
+        700 : #1D1D1D,
+        800 : #1D1D1D,
+        900 : #1D1D1D,
+        A100 : #1D1D1D,
+        A200 : #1D1D1D,
+        A400 : #1D1D1D,
+        A700 : #1D1D1D,
+    )
+);
+$my-theme-primary: mat-palette($my-primary);
+$my-theme-accent: mat-palette($my-accent);
+$background: mat-palette($my-theme-primary, A400);
+//the third, for the warn color, is the predefined material red palette
+$my-theme-warn: mat-palette($mat-red);
+
+$my-theme: mat-light-theme($my-theme-primary, $my-theme-accent, $my-theme-warn);
+
+@include angular-material-theme($my-theme);
+
+.background {
+  color: mat-color($background);
+}

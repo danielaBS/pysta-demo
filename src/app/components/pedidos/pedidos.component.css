@@ -1,0 +1,93 @@
+.main-container {
+    height: 85%;
+    margin: 1em;
+}
+.visitasContainer {
+    width: 100%;
+    background-color: white;
+}
+.filtros {
+    width: 100%;
+    overflow-x: visible;
+}
+.main-filtros {
+    width: 88%;
+    background-color: white;
+    padding: 1em;
+}
+.header {
+    padding: 20px 4% 0;
+    border-bottom: 3px solid #F1F1F3;
+}
+.footer li, .header li, li {  
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    color: #A4AFB7;
+  }
+  
+table {
+    width: 100%;
+    margin: 1.9em 0 0;
+}    
+mat-list {
+    width: 100%;
+    margin: 0;
+}
+agm-map {
+    height: 300px;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .initials {
+    color: #FCFCFC;
+    font-size: 18px;
+    line-height: 19px;
+    letter-spacing: 0.2625px;
+  }
+  
+.container-accordeon{
+    width: 800px;
+    height: 610px;
+    overflow-y: scroll;
+    padding: 15px;
+}  
+
+.table-header div {
+    margin-left: 10px !important;
+}
+
+.example-list {
+    min-width: 300px;
+    width: auto;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    background: white;
+    text-align: left;
+    padding: 10px;
+  }
+
+  .btn {
+      background-color: #43425D;
+      color: white;
+      border-radius: 5px;
+      padding: 2px 8px;
+  }
+  
+  .example-list li {
+    list-style-type: none;
+    padding: 8px 0;
+  }
+
+  .example-list li:not(:first-child) {
+    border-top: solid 1px #8b8b8b;
+
+  }

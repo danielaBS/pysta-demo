@@ -1,0 +1,55 @@
+.card {
+    width: 98%;
+    height: 45%;
+    background-color: white;
+    margin: 1em;
+    padding: 1em;
+}
+
+.card-line {
+    width: 55%;
+}
+.card-bar{
+    width: 40%;
+}
+.table-container-1 {
+    background-color: white;
+    width: 39%;
+}
+.table-container-2 {
+    background-color: white;
+    width: 59%;
+}
+table {
+    padding: 1em !important;
+    width: 94%;
+}
+mat-paginator {
+    width: 94%;
+}
+.header {
+    width: 95%;
+    padding: 20px 2% 0;
+    margin-bottom: 1em;
+    border-bottom: 3px solid #F1F1F3;
+}
+.header li {
+    color: #D8D8D8;
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+}
+.header h1 {
+    margin: 0 !important;
+}
+.btn {
+    background-color: #43425D;
+    color: white;
+    border-radius: 5px;
+    margin: 10px 2px;
+}
+.filters {
+    width: 100%;
+    padding-left: 0!important;
+    padding-right: 0!important;
+}

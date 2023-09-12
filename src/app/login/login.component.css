@@ -1,0 +1,53 @@
+.background {    
+    background-image: url('../../assets/fondo2.png');
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+.container {
+    height: 100%;
+}
+.main {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: white;
+    
+}
+.btn {
+    width: 100%;
+    background-color: #43425D;
+    border-radius: 5px;
+    color: white;
+}
+.formLog {
+    width: 45%;
+}
+.formLog input {
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid black;
+
+}
+
+#loginForm div {
+    margin: 2em 0;
+}
+
+.img {
+    top: 0;
+    width: 100%;
+    text-align: left;
+    padding-left: 2em;
+    margin-bottom: 4em;
+}
+
+.footer {
+    position: absolute;
+    bottom: 20px;
+}
+.footer p {
+    width: 100%;
+    margin-top: 2em;    
+}

@@ -1,0 +1,118 @@
+<div class="main-container row">
+    <div class="row d-flex justify-content-center">
+        <div class="schedule-form">
+            <div>
+                <h1 style="margin: 0 !important; text-align:center">CONFIGURAR HORARIO DE RASTREO</h1>
+            </div>
+            <hr>
+            <div class="d-flex flex-row">
+                <div class="col-md-6" style="padding: 5px;">  
+                    <strong>Seleccionar Vendedor:</strong>
+                    <br>
+                    <div class="search d-flex justify-content-center">
+                        <mat-form-field>
+                            <mat-label>Buscar</mat-label>
+                            <input matInput (keyup)="applyFilter($event)" [(ngModel)]="searchText" placeholder="Ej.: Juan" #input>
+                        </mat-form-field>
+                    </div>      
+                    <div style="padding: 5px; padding-left: 10px; overflow-y: auto;">
+                        <div style="display: flex">
+                            <div style="width: 90%">
+                                <h4> TODOS </h4>
+                            </div>
+                            <div style="width: 10%">
+                                <input type="checkbox" [checked]="isAllCheckBoxChecked()" (change)="checkAllCheckBox($event)"> 
+                            </div>
+            
+                        </div>        
+                        <div *ngFor="let vendedor of newData" style="display: flex">
+                            <div style="width: 90%">
+                                <h5>{{ vendedor.nombreVendedor }}</h5>
+                            </div>
+                            <div style="width: 10%">
+                                <input type="checkbox" value="{{vendedor.idUsuario}}" [(ngModel)]="vendedor.checked">
+                            </div>
+                        </div>   
+                    </div>            
+                </div> 
+                <div class="col-md-6" style="padding: 5px;"> 
+                    <strong>Seleccionar Días:</strong>  
+                    <br>
+                    <div class="d-flex flex-column" style="padding: 5px; padding-left: 10px; overflow-y: auto;">
+                        <div style="display: flex">
+                            <div style="width: 75%">
+                                <h4> TODOS </h4>
+                            </div>
+                            <div style="width: 10%">
+                                <input type="checkbox" [checked]="isAllCheckBoxCheckedDays()" (change)="checkAllCheckBoxDays($event)"> 
+                            </div>
+            
+                        </div> 
+                        <br>
+                        <div class="d-flex flex-row">
+                            <div *ngFor="let day of days" style="display: flex; flex-direction: column; margin: 0 1em 0 0;">
+                                <div style="width: 90%">
+                                    <h5>{{ day.nombre }}</h5>
+                                </div>
+                                <div style="width: 10%">
+                                    <input type="checkbox" value="{{day.id}}" [(ngModel)]="day.checked">
+                                </div>
+                            </div>  
+
+                        </div>
+                        <hr>
+                        <strong>Seleccionar Horario:</strong>
+                        <br>
+                        <div>
+                            <form [formGroup]="rangoHora" class="form">                        
+
+                                <div class="ngx-timepicker-field-example">
+                                    <mat-label>Hora Inicial <sub>(24 horas)</sub>:</mat-label>
+                                    <ngx-timepicker-field  [format]="24" formControlName="horaIn"></ngx-timepicker-field>
+                                </div>
+                                <br>
+                                <div class="ngx-timepicker-field-example">
+                                    <mat-label>Hora Final <sub>(24 horas)</sub>:</mat-label>
+                                    <ngx-timepicker-field  [format]="24" formControlName="horaFin"></ngx-timepicker-field>
+                                </div> 
+                            </form>    
+                        </div>                             
+                    </div>                   
+                </div>                  
+            </div>
+            <br>
+            <div class="d-flex justify-content-center">
+                <input class="btn" type="button" value="Guardar Horario" >                     
+            </div>
+        </div>
+        <div class="visitType-form">
+            <div>
+                <h1 style="margin: 0 !important; text-align:center">CONFIGURAR TIPOS DE VISITA</h1>
+            </div>
+            <hr>
+            <form [formGroup]="visitsType" class="form">     
+                <div class="col-md-12 d-flex flex-column">                   
+                    <label for="tipo">
+                        Tipos de Visita:
+                    </label>
+                    <input id="tipo" type="text" formControlName="tipo" (keyup.enter)="onEnter($event)">
+                    <div *ngFor="let item of tipoVisita" class="item d-flex justify-content-start flex-row" id="{{item}}">
+                        <button class="button-list"><i class="fas fa-times" (click)="deleteItem($event)"></i> 
+                        </button>
+                        {{item}}
+                    </div>                                                      
+                </div>                                              
+            </form>
+            <br>
+            <div class="d-flex justify-content-center">
+                <input class="btn" type="button" (click)="saveVisitTypes()" value="Guardar Tipos" >                     
+            </div>
+            
+    
+        </div>
+
+    </div>
+
+    
+    
+</div>
