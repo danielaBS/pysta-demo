@@ -11,10 +11,22 @@
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
   <script src="https://use.fontawesome.com/releases/v5.13.1/js/all.js" data-auto-replace-svg="nest"></script>
+  <script>
+    (function () {
+      // Retrieve the URL the user was trying to access when receiving the 404.
+      var redirect = sessionStorage.redirect;
+      // Remove the URL from sessionStorage.
+      delete sessionStorage.redirect;
+      // Check if we actually need to redirect.
+      if (redirect && redirect != location.href) {
+        // We need to redirect to the URL the user was trying to access.
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
 
-
-<link rel="stylesheet" href="styles.d052c67877d95ee830c6.css"></head>
+<link rel="stylesheet" href="./styles.a55c5c72b3ce0ee37d98.css"></head>
 <body class="mat-typography">
   <app-root></app-root>
-<script src="runtime-es2015.4f5526c8e30964b3736c.js" type="module"></script><script src="runtime-es5.4f5526c8e30964b3736c.js" nomodule defer></script><script src="polyfills-es5.96afa0562201fc1b608f.js" nomodule defer></script><script src="polyfills-es2015.1d6727b88f466c8412b8.js" type="module"></script><script src="main-es2015.ef205c88ca4fb32e2064.js" type="module"></script><script src="main-es5.ef205c88ca4fb32e2064.js" nomodule defer></script></body>
+<script src="./runtime-es2015.ae0b88b6efdfdcf91bfd.js" type="module"></script><script src="./runtime-es5.ae0b88b6efdfdcf91bfd.js" nomodule defer></script><script src="./polyfills-es5.dc35aba394c7bd315c09.js" nomodule defer></script><script src="./polyfills-es2015.fed6c73009e867735d76.js" type="module"></script><script src="./main-es2015.f9d12b61e3c412a7648a.js" type="module"></script><script src="./main-es5.f9d12b61e3c412a7648a.js" nomodule defer></script></body>
 </html>
